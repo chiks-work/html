@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Home Page - Desktop/Tablet/Mobile</title>
+    <style>
+        /* --- 1. DESKTOP VIEW (Default CSS) --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 960px;
+            /* Fixed width for Desktop */
+            margin: 0 auto;
+            /* Centered */
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            display: inline-block;
+        }
+
+        nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            /* Horizontal */
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .features {
+            padding: 50px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 30%;
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        .about {
+            padding: 50px 0;
+            overflow: hidden;
+        }
+
+        .about-img {
+            float: left;
+            width: 400px;
+            /* Fixed width on desktop */
+            margin-right: 30px;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* =========================================
+           2. TABLET VIEW (Max width 991px)
+           ========================================= */
+
+        @media screen and (max-width: 991px) {
+
+            /* Make container flexible so it fits on tablets */
+            .container {
+                width: 95%;
+            }
+
+            /* Adjust About Image to be percentage based instead of fixed 400px */
+            .about-img {
+                width: 45%;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+                /* Slightly smaller font */
+            }
+        }
+
+        /* =========================================
+           3. PHONE / MOBILE VIEW (Max width 768px)
+           ========================================= */
+
+        @media screen and (max-width: 768px) {
+
+            /* 1. Container */
+            .container {
+                width: 90%;
+                /* More padding on sides for mobile */
+            }
+
+            /* 2. Header */
+            header {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            header h1 {
+                display: block;
+                /* Stacks logo */
+                margin-bottom: 15px;
+            }
+
+            nav {
+                float: none;
+                margin-top: 0;
+            }
+
+            nav ul li {
+                display: block;
+                /* Stacks links vertically */
+                margin: 10px 0;
+                background: #444;
+                /* Makes links easier to tap */
+                padding: 5px;
+            }
+
+            /* 3. Hero */
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            /* 4. Features */
+            .box-container {
+                flex-direction: column;
+                /* Stacks boxes vertically */
+            }
+
+            .box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            /* 5. About */
+            .about-img {
+                float: none;
+                /* Removes float, goes to top */
+                width: 100%;
+                /* Full width image */
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>MyWebsite</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="container">
+            <h2>Welcome to Our Page</h2>
+            <p>Responsive design for Desktop, Tablet, and Mobile.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Desktop</h3>
+                    <p>Fixed 960px width layout with 3 columns.</p>
+                </div>
+                <div class="box">
+                    <h3>Tablet</h3>
+                    <p>Fluid width layout that adjusts to screen size.</p>
+                </div>
+                <div class="box">
+                    <h3>Mobile</h3>
+                    <p>Stacked layout with vertical navigation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+
+    <div class="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="https://via.placeholder.com/400x300" alt="Office Image">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p><strong>Desktop:</strong> Image floats left with fixed width.</p>
+                <p><strong>Tablet:</strong> Image floats left but width is flexible.</p>
+                <p><strong>Mobile:</strong> Image is full width and text moves below it.</p>
+                <br>
+                <a href="#" class="btn" style="background-color: #4CAF50;">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 MyWebsite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

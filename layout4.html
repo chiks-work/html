@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header,.footer
+    {
+        -border: 1px solid black;
+        height: 50px;
+        font-size: 40px;
+        text-align: center;
+        
+    }
+
+    .header
+    {
+        background-color: #7EACB5;
+    }
+    .footer
+    {
+        background-color: #6A9C89;
+    }
+    .main
+    {
+        -border: 1px solid red;
+        height: 400px;
+        
+    }
+    .one,.two,.three
+    {
+        -border: 1px solid black;
+        height: 100%;
+        width: 33.33%;
+        float: left;
+        font-size: 40px;
+        text-align: center;
+    }
+    .one
+    {
+        background-color: #10375C;
+    }
+    .two
+    {
+        background-color: #A5B68D;
+    }
+    .three
+    {
+        background-color: #B8001F;
+    }
+
+    .up
+    {
+        -border: 1px solid red;
+        height: 50%;
+        box-sizing: border-box;
+        background-color: #98DED9;
+    }
+    .down
+    {
+        -border: 1px solid green;
+        height: 50%;
+        box-sizing: border-box;
+        background-color: #A1D6B2;
+    }
+
+</style>
+<body>
+    <div class="header">header</div>
+    <div class="main">
+        <div class="one">one</div>
+        <div class="two">
+            <div class="up">up</div>
+            <div class="down">down</div>
+        </div>
+        <div class="three">three</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

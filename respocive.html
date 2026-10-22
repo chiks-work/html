@@ -6,102 +6,72 @@
     <title>Document</title>
 </head>
 <style>
-    body
-    {
-        margin: 0;
-        padding: 0;
-    }
-    .box
-    {
-        -border: 1px solid black;
-        height: 700px;
-        background-color: yellow;
-    }
     .header
     {
-        -border: 1px solid black;
+        border: 1px solid black;
         height: 50px;
-        display: flex;
-
+        font-size: 50px;
+        text-align: center;
+        background-color: red;
+    }
+    .main
+    {
+        border: 1px solid black;
+        height: 400px;
+        
     }
     .left
     {
         -border: 1px solid black;
         height: 100%;
-        width: 20%;
-        background-color: red;
+        width: 50%;
+        float: left;
+        background-color: green;
+        font-size: 50px;
     }
     .right
     {
         -border: 1px solid black;
         height: 100%;
-        width: 80%;
-        background-color: green;
-    }
-    @media(min-width:200px) and (max-width:400px)
-    {
-
-        
-      .box{
-        border: 1px solid black;
-        
-      }
-      .header{
-        height: 200px;
-      }
-      .left{
-        background-image: url("/image/logo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        background-position-x: -40px;
-        
-        
-      }
-      .right
-      {
-            background-color: white;
-      }
-      .main
-      {
-        -border: 1px solid black;
         width: 50%;
-      }
+        float: left;
+        background-color: blue;
+        font-size: 50px;
     }
-    @media(min-width:401px) and (max-width:700px)
+    .footer
     {
-        .box
-        {
-            background-image: url("/image/logo.jpg");
-
-        }
+        border: 1px solid black;
+        height: 50px;
+        font-size: 50px;
+        text-align: center;
+        background-color: yellow;
+    }
+    @media(max-width:400px)
+    {
         .header
         {
-            -border: 1px solid black;
-
+           background-color: #131D4F;
         }
         .left
         {
-           background-color: #31511E;  
+            background-color:#A0C878 ;
         }
         .right
         {
-            background-color: #B9E5E8;
+            background-color: #8D0B41;
         }
-        .main
+        .footer
         {
-            position: relative;
-            top: 200px;
+            background-color: #D8A25E;
         }
     }
 </style>
 <body>
-    <div class="box">
-        <div class="header">
-            <div class="left"></div>
-            <div class="right"></div>
-        </div>
-        <div class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus doloribus deleniti eligendi accusamus suscipit assumenda, blanditiis molestiae. Molestias fugiat amet aliquid nam tempore commodi quos reprehenderit minima expedita dolor, aliquam aperiam nobis a? Error atque non odio quod, placeat dolores inventore ducimus enim! Fugiat earum laudantium voluptas, reprehenderit dolore maxime eligendi asperiores cum saepe sit laboriosam. Nesciunt, nihil. Ab dicta, eaque dolores reprehenderit aut eveniet quas ipsum rerum in autem quaerat asperiores natus quidem et vero, obcaecati quod harum praesentium maiores! Ullam debitis eum inventore. Libero deleniti fugiat dignissimos itaque nostrum asperiores labore, reprehenderit aperiam exercitationem, ad, iure quod nulla!</div>
+    <div class="header">header</div>
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
     </div>
+    <div class="footer">footer</div>
 </body>
 </html>

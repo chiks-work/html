@@ -1,84 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <style>
-    body
-    {
-        background-color: #D4EBF8;
-    }
-    div
-    {
+    form {
         border: 1px solid black;
-        height: 600px;
-        width: 300px;
-        margin: 200px 500px;
-        background-color: white;
-        
+        height: 700px;
+        width: 400px;
+        margin: 100px auto;
     }
-    img
-    {
-        height: 80px;
-        border: none;
 
-        
+
+    .demo1 {
+        font-size: 23px;
+        margin-left: 43px;
     }
-    .emaiid,.password
-    {
-        font-size: 20px;
-        margin-top: 20px;
-        margin-left: 100px;
-    }
-    .emaiid1,.password1
-    {
-       height: 40px;
-       width: 100%;
-       box-sizing: border-box;
-        
-    }
-    p
-    {
-        font-size: 20px;
-    }
-    #male,#female
-    {
-        margin-top: 20px;
-        margin-left: 60px;
-        font-size: 100px;
-        
-    }
-    #submit
-    {
-        margin-top: 20px;
-        height: 40px;
+
+    .data1 {
+        height: 19px;
         width: 80%;
-        
+        margin-left: 43px;
+    }
+
+    .data2 {
+        margin-left: 43px;
+    }
+
+    button {
+        height: 43px;
+        width: 80%;
+        margin-left: 43px;
+        font-size: 19px;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+
+    p {
+        font-size: 21px;
+
     }
 </style>
+
 <body>
-    <div>
-        <center><img src="/image/logo.jpg" alt=""></center>
-        <form action="">
-          <label  for="" class="emaiid">Emaiid</label> <br>
-         <input type="text" class="emaiid1"><br>
-          <label for="" class="password">Password</label><br>
-          <input type="password" class="password1"> <br>
-          <center><p>gender</p></center>
-          <input type="radio"  name="gender" id="male">male
-          <input type="radio" name="gender" id="female"> female <br>
-          <center><p>hobby</p></center>
-          <input type="checkbox"> reading <br>
-          <input type="checkbox"> chess   <br>
-          <input type="checkbox"> editing photos <br>
-          <input type="checkbox"> whating movies
+    <form action="">
+        <center><img src="/image/logo.jpg" alt="" height="100px"></center>
+        <center>
+            <h1>login</h1>
+        </center>
+        <label for="" class="demo1">username</label><br><br>
+        <input type="text" class="data1"><br><br>
+        <label for="" class="demo1">password</label><br><br>
+        <input type="password" class="data1"><br><br>
+        <label for="" class="demo1">hobby</label><br><br>
+        <input type="checkbox" class="data2">reading
+        <input type="checkbox">typing
+        <input type="checkbox">writing
+        <input type="checkbox">traveling <br><br>
+        <label for="" class="demo1">gender</label><br><br>
+        <input type="radio" class="data2">male
+        <input type="radio">female <br><br>
+        <button>login</button>
 
-         <center><input type="submit" id="submit"></center>
 
-        </form>
-    </div>
+
+        <center>
+            <p>not a member <a href="#">singup now</a></p>
+        </center>
+    </form>
 </body>
+
 </html>

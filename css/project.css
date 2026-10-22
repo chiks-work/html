@@ -2,8 +2,10 @@ body
 {
     margin: 0px;
     padding: 0px;
-    border: 1px solid black;
+    -border: 1px solid black;
+    
 }
+/* stating part of heading */
 .header
 {
     -border: 1px solid black;
@@ -12,6 +14,7 @@ body
     top: 0px;
     z-index: 1;
     background-color: white;
+   
 }
 .left
 {
@@ -33,15 +36,21 @@ ul
 {
     display: flex;
     justify-content: space-evenly;
+    
 }
+
 li
 {
     list-style: none;
+    width: 20px;
+
 }
     @font-face {
         font-family: font;
         src: url("/font/Arima-VariableFont_wght.ttf");
     }
+   
+   
 a
 {
     text-decoration: none;
@@ -49,6 +58,14 @@ a
     font-family: font;
     position: relative;
     top: -10px;
+   
+   -border: 1px solid black;
+   display: inline-block;
+
+
+
+    padding-inline: 20px;
+   
     
     
 }
@@ -57,7 +74,8 @@ a:link
 {
     color: #1a300e;
     background-color: #EC8305;
-    border-radius: 100px;
+    border-radius: 20px;
+    
     
 
 }
@@ -68,14 +86,18 @@ a:hover
     background-color: white;
     
 }
+/* ending part of header */
+
+
+/* stating part main */
 .main
 {
     -border: 1px solid white;
-    height: 600px;
+    height: 700px;
     background-image: url("/image/street4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:-310px;
+    
     
     
     
@@ -139,7 +161,7 @@ label
     bottom: 5px;
     
 }
-button
+.btn
 {
     position: relative;
     top:34px;
@@ -153,7 +175,9 @@ button
 }
 
 
+/* ending part of main */
 
+/* starting  part main1 */
 .main1
 {
     border: 1px solid black;
@@ -163,6 +187,7 @@ button
     background-size: cover;
     background-position-y: bottom;
     display: flex;
+    
     
 }
 .left1
@@ -217,8 +242,10 @@ video
         
     
 }
+/* ending part main1 */
+/* starting pat main2 */
 
-.main2
+/* .main2
 {
     -border: 1px solid black;
     height: 700px;
@@ -226,40 +253,420 @@ video
     justify-content:space-evenly;
     
     
+    
 }
 .box4{
     
     -border: 1px solid black;
-    height: 400px;
+    height: 500px;
     width: 300px;
     position: relative;
     top: 40px;
+    border-radius: 20px;
     
     
 }
 .top
 {
-    -border: 1px solid black;
-    height: 80%;
-    background: linear-gradient(rgba(255, 0, 0, 0.5),rgba(0,0,0,0.5)),url("/image/market1.jpg");
-    background-size: cover;    
+    border: 1px solid black;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.top2
+{
+    background-image: url("/image/market1.jpg");
+    background-size: cover;
+}
+.top3
+{
+    background-image: url("/image/mall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top4
+{
+    background-image: url("/image/supermarket.jpg");
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+    background-position-y: center;
+    
+}
+.top5
+{
+    background-image: url("/image/parmacy.jpg");
+    
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    
 }
 
 .bottom
 {
-    -border: 1px solid black;
-    height: 20%;
+    border: 1px solid black;
+    height: 15%;
     text-align: center;
-    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
     
     
 }
-.bottom:hover
+
+@font-face
+{
+    font-family:font1 ;
+    src: url("/font/fa-v4compatibility.ttf");
+
+}
+.b2
+{
+    font-size: 26px;
+    font-family: font1;
+    margin-top: 20px;
+} */
+/* ending part main2 */
+
+
+/* starting part main3 */
+
+.main2
+{
+    -border: 1px solid black;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -background-image: url("/image/footer.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+.card,.card-1,.card-2,.card-3
+{
+    border: 8px solid #FF8911;
+    height: 400px;
+    width: 240px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    -box-shadow: 4px 7px 10px 4px grey;
+    
+}
+
+.card-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-body,.cardbody1,.cardbody2,.cardbody3
+{
+    -border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+   background-color: #36778c18;
+   backdrop-filter: blur(5px);
+   top:80%;
+   transition: 2s;
+   
+}
+
+.card:hover .card-body
+{
+    top: 0;
+}
+.card-1:hover .cardbody1
+{
+    top: 0;
+}
+.card-2:hover .cardbody2
+{
+    top: 0;
+}
+.card-3:hover .cardbody3
+{
+    top: 0;
+}
+.card-title
+{
+    font-size: 34px;
+    text-align: center;
+    font-weight: 500px;
+   
+}
+.card-subtitle
+{
+    font-size:20px;
+    font-weight: 500;
+   
+   
+}
+.card-btn
+{
+    background-color: #36768c;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    position: relative;
+    left: 20px;
+    
+}
+
+.main3
+{
+    -border: 1px solid black;
+    height: 2000px;
+}
+.main-box
+{
+    -border: 1px solid black;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    -padding: 20px;
+    padding-left: 20px;
+}
+.main-left
+{
+    -border: 1px solid black;
+    height: 430px;
+    width: 60%;
+    background-image: url("/image/street1.jpeg");
+    background-position: center;
+    box-shadow: 4px 4px 8px grey;  
+
+}
+
+.main-right
+{
+    -border: 1px solid black;
+    height: 340px;
+    width: 30%;
+    position: relative;
+    left: 40px;
+    padding-left: 20px;
+}
+.main-left1
+{
+    -border: 1px solid black;
+    height: 300px;
+    width: 30%;
+    position: relative;
+    left: 60px;
+}
+.main-right1
+{
+    -border: 1px solid black;
+    height: 400px;
+    width: 60%;
+    position: relative;
+    left: 110px;
+   background-image: url("/image/mall1.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-shadow: -4px 4px  8px grey ;
+  
+}
+@font-face
+{
+    font-family: font1;
+    src: url("/font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+h4
+{
+    font-size: 27px;
+    -font-weight: 500px;
+    font-family: font1;
+
+}
+p
+{
+    font-size: 18px;
+    
+
+}
+
+.main-btn       
+{
+    height: 34px;
+    width: 80px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: white;
+    
+    
+}
+.icon
+{
+    font-size: 9px;
+}
+.main4
+{
+    border: 1px solid black;
+    height: 400px;
+    
+}
+.up
+{
+    -border: 1px solid red;
+    height: 40%;
+    
+}
+.up-b
 {
     position: relative;
-    top:10px;
+    top:20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.up-h1
+{
+    
+    text-align: center;
+    
+}
+.up-p
+{
+    font-size: 20px;
+    text-align: center;
+    padding-inline: 180px;
+    
+    
+    
+
+    
+}
+.center
+{
+    -border: 1px solid  red;
+    height: 40%;
     
     
 }
+
+@font-face {
+    font-family: font2;
+    src: url("/font/SmoochSans-VariableFont_wght.ttf");
+   
+}
+.center-top
+{
+    -border: 1px solid red;
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    font-family: font2;
+   
+}
+
+
+.center-box
+{
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:20px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-direction: column;
+    
+}
+
+.center-box1
+{
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.center-box2
+{
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+/* .center-down
+{
+    -border: 1px solid black;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.center-box3
+{
+    border: 1px solid black;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+
+.center-box4
+{
+    border: 1px solid black;
+    height:80px;
+    width: 200px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+}
+.down
+{
+    border: 1px solid black;
+    height: 20%;
+    box-sizing: border-box;
+}
+.down-h2
+{
+    text-align: center;
+    font-family: font2;
+}
+
+
 

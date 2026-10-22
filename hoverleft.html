@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main2
+{
+    border: 1px solid black;
+    height: 100vh;
+    background-color: #36768c;
+    display: flex;
+    align-items: center;
+}
+.card
+{
+    border: 1px dotted black;
+    height: 500px;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 8px solid white;
+    position: relative;
+}
+
+.card-img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-body
+{
+    width: 100%;
+   
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    background: #1f3d473a;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    
+    transition: 2s;
+    overflow: hidden;
+    height: 100%;
+    
+    
+}
+.card:hover .card-body
+{
+    left: 0;
+}
+.card-title
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.card-info
+{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-left: 20px;
+  
+}
+.card-btn
+{
+    color: #1f3d47;
+    background-color: #8fabba;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+   
+
+}
+</style>
+<body>
+    <div class="main2">
+        <div class="card">
+            <img src="/image/market1.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <h1 class="card-title">Street market</h1>
+                <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, eius ullam. Laborum sint tempora, iusto, fuga saepe earum expedita consequuntur repellendus ipsum ut quibusdam doloribus?</p>
+                <button class="card-btn">open</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

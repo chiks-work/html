@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main
+    {
+        border: 1px solid black;
+        height: 1000px;
+        -width: 100%;
+        background-color: #36768c;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }  
+    .card
+    {
+        border: 8px solid rgb(255, 187, 0);
+        
+        height: 400px;
+        width: 280px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        
+      
+       
+    }
+    .card-1
+    {
+        border: 8px solid #798645;
+        height: 400px;
+        width: 280px;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+    }
+    .card-2
+    {
+        border: 8px solid #A1D6B2;
+        height: 400px;
+        width: 280px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+
+    }
+
+
+
+
+
+
+
+    .card-3
+    {
+        border: 8px solid #B2B377;
+        height: 400px;
+        width: 280px;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+        
+    }
+    
+    .card-img
+    {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        -border-radius: 20px;
+       
+    }
+    .card-body
+    {
+        -border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+        background-color: #2436422c;
+        backdrop-filter: blur(5px);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       transition: 2s;
+    
+    }
+    
+.cardbody1
+{
+        border: 8px solod red;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        left: -100%;
+        background-color: #36778c2d;
+        backdrop-filter: blur(5px);
+        transition: 2s;
+}
+
+.cardbody2
+{
+    -border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #36778c27;
+    flex-direction: column;
+    justify-content: center;
+    top: 100%;
+    backdrop-filter: blur(5px);
+    transition: 2s;
+
+}
+   
+
+.cardbody3
+{
+    height: 100%;
+    width: 100%;
+    background-color: #36778c38;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 100%;
+
+
+
+    transition: 2s;
+    backdrop-filter: blur(5px);
+}
+
+
+    
+   .card:hover .card-body
+   {
+     
+      right: 0;  
+   }
+   .card-1:hover .cardbody1
+   {
+        left: 0;
+   }
+   .card-2:hover .cardbody2
+   {
+        top: 0;
+   }
+
+
+
+
+
+
+   .card-3:hover .cardbody3
+   {
+        bottom: 0;
+   }
+   
+   
+
+
+    
+    
+    .card-title
+    {
+        font-size: 50px;
+      font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    
+    .card-subtitle
+    {
+        font-size: 20px;
+        font-weight: 110px;
+        text-transform: capitalize;
+        line-height: 20px;
+        margin-inline: 20px;
+        
+        text-align: justify;
+    }
+    .card-btn
+    {
+        -border: 1px solid black;
+       
+      
+        border-radius: 4px;
+        padding:10px 20px;
+        background-color: #1f3d47;
+        color: white;
+        border: none;
+        margin: 20px;
+        width: 120px;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="card">
+            <img src="/image/market1.jpg" alt="" class="card-img">
+            <div class="card-body">
+                <h1 class="card-title">Street market</h1>
+                <p class="card-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quia sapiente quas placeat iure minima magni sequi minus quisquam nesciunt!</p>
+                <button class="card-btn">submit</button>
+            </div>
+        </div>
+        <div class="card-1">
+            <img src="/image/market1.jpg" alt="" class="card-img">
+            <div class="cardbody1">
+                <h1 class="card-title">Street market</h1>
+                <p class="card-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quia sapiente quas placeat iure minima magni sequi minus quisquam nesciunt!</p>
+                <button class="card-btn">submit</button>
+            </div>
+        </div>
+
+        <div class="card-2">
+            <img src="/image/market1.jpg" alt="" class="card-img">
+            <div class="cardbody2">
+                <h1 class="card-title">Street market</h1>
+                <p class="card-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quia sapiente quas placeat iure minima magni sequi minus quisquam nesciunt!</p>
+                <button class="card-btn">submit</button>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card-3">
+            <img src="/image/market1.jpg" alt="" class="card-img">
+            <div class="cardbody3">
+                <h1 class="card-title">Street market</h1>
+                <p class="card-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis quia sapiente quas placeat iure minima magni sequi minus quisquam nesciunt!</p>
+                <button class="card-btn">submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
